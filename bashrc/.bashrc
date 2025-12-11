@@ -24,3 +24,4 @@ alias fix-workstations='hyprctl dispatch moveworkspacetomonitor 1 DVI-I-1; for w
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 
+export PATH="$HOME/.local/bin:$PATH"
