@@ -9,8 +9,6 @@ return {
         "emmet-ls",
         "tailwindcss-language-server",
         "intelephense",
-        "pint",
-        "css-lsp",
       })
     end,
   },
