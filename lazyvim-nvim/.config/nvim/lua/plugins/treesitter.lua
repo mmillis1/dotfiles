@@ -1,16 +1,15 @@
 return {
   {
-    "mason-org/mason.nvim",
+    "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       opts.ensure_installed = opts.ensure_installed or {}
-
       vim.list_extend(opts.ensure_installed, {
-        "html-lsp",
-        "emmet-ls",
-        "tailwindcss-language-server",
-        "intelephense",
-        "phpactor",
+        "php",
+        "json",
+        "typescript",
+        "tsx",
       })
+      opts.auto_install = true
     end,
   },
 }
