@@ -9,7 +9,6 @@ return {
         "emmet-ls",
         "tailwindcss-language-server",
         "intelephense",
-        "phpactor",
       })
     end,
   },
