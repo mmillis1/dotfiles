@@ -18,10 +18,25 @@ source ~/.local/share/omarchy/default/bash/rc
 # Add your own exports, aliases, and functions below.
 alias vim="nvim"
 alias tmux-keybinds="glow ~/Scripts/tmux-cheatsheet.md"
-#alias fix-workstations="hyprctl dispatch moveworkspacetomonitor 1 DVI-I-1"
-alias fix-workstations='hyprctl dispatch moveworkspacetomonitor 1 DVI-I-1; for ws in {2..7}; do hyprctl dispatch moveworkspacetomonitor "$ws" DP-1; done'
+
+zai() {
+  ANTHROPIC_BASE_URL=https://api.z.ai/api/anthropic \
+
+  ANTHROPIC_AUTH_TOKEN="$ZAI_API_KEY" \
+
+  ANTHROPIC_DEFAULT_HAIKU_MODEL=glm-4.5-air \
+
+  ANTHROPIC_DEFAULT_SONNET_MODEL=glm-4.7 \
+
+  ANTHROPIC_DEFAULT_OPUS_MODEL=glm-4.7 \
+
+  claude "$@"
+}
 
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 
 export PATH="$HOME/.local/bin:$PATH"
+
+# opencode
+export PATH=/home/mmillis/.opencode/bin:$PATH
