@@ -33,10 +33,8 @@ zai() {
   claude "$@"
 }
 
-export PATH="$HOME/.config/composer/vendor/bin:$PATH"
-
-
-export PATH="$HOME/.local/bin:$PATH"
-
 # opencode
 export PATH=/home/mmillis/.opencode/bin:$PATH
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
